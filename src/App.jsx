@@ -9,12 +9,13 @@ export default function App() {
   
   return (
     <BrowserRouter>
-      <nav className='navar'>
-        <h1 className='navbar-logo'>#VANLIFE</h1>
-        <Link to='/'>Home</Link>
-        <Link to='/about'>About</Link>
-        <Link to='/vans'>Vans</Link>
-      </nav>
+      <header>
+          <Link className='navbar-logo' to='/'>#VANLIFE</Link> 
+        <nav className='navar'>
+          <Link className='link-about' to='/about'>About</Link>
+          <Link to='/vans'>Vans</Link>
+        </nav>
+      </header>
       <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<About/>}/>

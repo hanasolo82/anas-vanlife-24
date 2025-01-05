@@ -3,7 +3,7 @@
 export default function About() {
 
     return (
-        <div>
+        <div className="page-about">
             About
         </div>
     )
